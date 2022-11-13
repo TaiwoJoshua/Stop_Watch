@@ -199,7 +199,7 @@ function record(){
     div.appendChild(content);
     document.getElementById("input").appendChild(div);
     document.getElementById("input").lastChild.scrollIntoView(true);
-    document.getElementById("timer").lastChild.scrollIntoView(true);
+    document.getElementById("timer").scrollIntoView(true);
 };
 function clear(){
     console.log("hello");
