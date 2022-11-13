@@ -98,7 +98,8 @@ button:hover{
 }
 #maintain{
     text-align: center;
-    margin-top: 10px;
+    margin-top: 5px;
+    line-height: 30px;
 }
 #maintain>a{
     text-decoration: none;
