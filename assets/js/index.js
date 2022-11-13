@@ -167,9 +167,11 @@ function save(){
     if(hour < 0 || min < 0 || sec < 0 || msec < 0){
         document.getElementById("negative").style.display = "block";
         document.getElementById("max").style.display = "none";
+        document.getElementById("edit").style.display = "none";
     }else if(min > 60 || sec > 60 || msec > 100){
         document.getElementById("max").style.display = "block";
-        document.getElementById("negstive").style.display = "none";
+        document.getElementById("negative").style.display = "none";
+        document.getElementById("edit").style.display = "none";
     }else{
         document.getElementById("negative").style.display = "none";
         document.getElementById("edit").style.display = "none";
@@ -197,12 +199,14 @@ function record(){
     div.appendChild(content);
     document.getElementById("input").appendChild(div);
     document.getElementById("input").lastChild.scrollIntoView(true);
+    document.getElementById("timer").lastChild.scrollIntoView(true);
 };
 function clear(){
     console.log("hello");
     document.getElementById("input").innerHTML = "";
     document.getElementById("records").style.visibility = "hidden";
 };
+
 document.getElementById("start").addEventListener('click', function(){
     start();
 });

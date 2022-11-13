@@ -133,4 +133,7 @@ button:hover{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+    #negative, #max, #edit, #maintain{
+        font-size: 12px;
+    }
 }
