@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="icon" href="./assets/img/watch.png">
+    <title>Stop Watch</title>
+</head>
+<body>
+    <div id="timer">
+        <div>
+            <div>Hours</div>
+            <input type="number" value="00" name="hour" id="hour" min="0" readonly>
+        </div>
+        <div>
+            <div>Minutes</div>
+            <input type="number" value="00" name="min" id="min" min="0" max="60" readonly>
+        </div>
+        <div>
+            <div>Seconds</div>
+            <input type="number" value="00" name="sec" id="sec" min="0" max="60" readonly>
+        </div>
+        <div>
+            <div>Milliseconds</div>
+            <input type="number" value="00" name="msec" id="msec" min="0" max="100" readonly>
+        </div>
+    </div>
+    <i id="edit">Time values are now editable</i>
+    <div id="error">
+        <i id="negative">Negative Input Detected</i>
+        <i id="max">Maximun Input Exceeded</i>
+    </div>
+    <div id="control">
+        <button id="start">start</button>
+        <button id="stop">stop</button>
+        <button id="reset">reset</button>
+        <button id="set">set</button>
+        <button id="save">save</button>
+        <button id="countdown">countdown</button>
+        <button id="record">record</button>
+    </div>
+    <div id="records">
+        <div>
+            Records
+        </div>
+        <div id="input">
+
+        </div>
+        <button id="clear">clear</button>
+    </div>
+    <p id="maintain">This project was built and is being maintained by <a href="https://taiwojoshua.netlify.app/" target="_blank">Taiwo Joshua</a></p>      
+</body>
+<script src="./assets/js/index.js"></script>
+</html>
